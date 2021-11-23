@@ -51,10 +51,10 @@ public class Game implements ILightsOut {
         boolean y1 = y + 1 <= 4;
         boolean y2 = y - 1 >= 0;
           grid[x][y] =! grid[x][y];
-        if (x1) {grid[x + 1][y] =! grid[x + 1][y];}
-        if (x2) {grid[x - 1][y] =! grid[x - 1][y];}
-        if (y1) {grid[x][y + 1] =! grid[x][y + 1];}
-        if (y2) {grid[x][y - 1] =! grid[x][y - 1];}
+        if (x1) grid[x + 1][y] =! grid[x + 1][y];
+        if (x2) grid[x - 1][y] =! grid[x - 1][y];
+        if (y1) grid[x][y + 1] =! grid[x][y + 1];
+        if (y2) grid[x][y - 1] =! grid[x][y - 1];
     }
 }
 
